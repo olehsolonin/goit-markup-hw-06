@@ -49,12 +49,21 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container {
+/* .container {
 	max-width: 1158px;
 	padding: 0 15px;   
 	margin: 0 auto; 
 	display: flex;
-}
+} */
+
+.container {
+	width: 100%;
+	max-width: 320px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-left: auto;
+	margin-right: auto;
+ }
 
 .header-container {
 
@@ -189,7 +198,8 @@ font-style: normal;
 /* ------------------------<section class="hero">----------- */
 
 section {
-	padding: 120px 0;
+	/* padding: 120px 0; */
+	padding: 96px 0;
 }
 
 .hero {
@@ -455,12 +465,14 @@ background-color: #4D5AE5;
 
 .portfolio {
 }
+
 .portfolio-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap:48px 24px
+	/* gap:48px 24px; */
+	gap: 48px;
 }
 
 .portfolio-items:hover .img-container .overlay-paragraf {
@@ -469,7 +481,8 @@ background-color: #4D5AE5;
 
 .portfolio-items {
 	position: relative;
-	min-width: calc((100% - 48px) / 3);
+	/* min-width: calc((100% - 48px) / 3); */
+	width: 100%;
 	box-shadow: none;
 	transition-property: box-shadow;
 	overflow: hidden;
@@ -489,8 +502,10 @@ background-color: #4D5AE5;
 .img-container {
 	position: relative;
 	overflow: hidden;
-	width: 360px;
-	height: 300px;
+	/* width: 360px; */
+	/* height: 300px; */
+	height: 280px;
+	margin: 0 auto;
 }
 
 .overlay-paragraf {
@@ -526,6 +541,13 @@ background-color: #4D5AE5;
 
 .modifier-portfolio {
 	text-align: left;
+}
+
+.portfolio-border .team-text {
+	/* margin: 8px 0; */
+	margin: 0;
+
+
 }
 
 
@@ -982,6 +1004,34 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .button-text {
 
+}
+
+
+
+/* ------------------------------MEDIA------------------------------- */
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	 }
+}
+
+.portfolio-list {
+	gap: 72px 24px;
+
+}
+
+.portfolio-items {
+	width: calc((100% - 24px) / 2);
+	
+}
+
+.img-container {
+
+	/* width: 360px; */
+	/* height: 300px; */
+	height: 300px;
+	margin: 0 auto;
 }
 
 
