@@ -247,6 +247,12 @@ transform: translate(-50%, -50%);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-close-btn:focus {
+	background-color: #404bbf;
+	border: none;
+
+}
+
 .mob-nav {
 	margin-bottom: 168px;
 }
@@ -271,6 +277,11 @@ transform: translate(-50%, -50%);
 	margin-bottom: 40px;
 }
 
+.mob-nav-link:focus {
+	color: #404bbf;
+ }
+ 
+
 .mob-address-list {
 
 
@@ -293,6 +304,10 @@ transform: translate(-50%, -50%);
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.mob-address-cnt:focus {
+	color: #404bbf;
+ }
 
 .mob-soc {
 display: flex;
@@ -322,6 +337,10 @@ background-color: #4d5ae5;
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.mob-icon-link:focus {
+	background-color: #31d0aa;
+ }
 
 
 
